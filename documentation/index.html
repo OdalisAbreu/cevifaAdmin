@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Datum | Documentation by iqonic.design</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+
+    </script>
+
+    <div id="wrapper">
+
+        <div class="container">
+
+            <section class="section" id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h1 class="display-4">Datum</h1>
+                            <p class="lead">Template documentation version 1.0</p>
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+                <hr>
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li><a href="#intro">Introduction & Quick Start</a>
+                                <ul class="nav">
+                                    <li><a href="#requirements">Requirements</a></li>
+                                    <li><a href="#file-structure">File Structure</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#basic-installation"> Installation</a>
+                                <ul class="nav">
+                                    <li><a href="#laravel-install">Laravel</a></li>
+                                    <li><a href="#App-Configuration">App Configuration</a></li>
+                                    <li><a href="#Database-Configuration">Database Configuration</a></li>
+                                    <li><a href="#Mail-Configuration">Mail Configuration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#cutomization">Customization</a>
+                                <ul class="nav">
+                                    <li><a href="#color-mode">Color</a></li>
+                                    <li><a href="#basic-favicon">Favicon</a></li>
+                                    <li><a href="#basic-loading">Loading Transition</a></li>
+                                    <li><a href="#basic-logo">Logo</a></li>
+                                    <li><a href="#basic-fonts">Changing Fonts</a></li>
+                                    <li><a href="#basic-structure">HTML Structure</a></li>
+                                    <li><a href="#basic-css">CSS Structure</a></li>
+                                    <li><a href="#basic-js">Javascript Structure</a></li>
+                                </ul></li>
+                            <li><a href="#helper-section">Helper Classes</a>
+                                <ul class="nav">
+                                    <li><a href="#basic-padding">Section padding</a></li>
+                                    <li><a href="#basic-color">Text color</a></li>
+                                    <li><a href="#basic-background">Background color</a></li>
+                                    <li><a href="#basic-pattern">Background Images</a></li>
+                                    <li><a href="#basic-overlay">Background overlay</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#basic-components">Bootstrap Components</a></li>
+                            <li><a href="#basic-sliders">For Sliders</a></li>
+                            <li><a href="#basic-source-credit">Source & Credits</a></li>
+                            <li><a href="#copyright-licence">Copyright and license</a></li>
+                        </ul>
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    <section class="section" id="intro" class="welcome">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                               <h2 class="sub-title">Introduction<hr></h2>
+                                <div class="row">
+
+                                    <div class="col-md-12 full">
+                                        <div class="intro1">
+                                            <ul>
+                                                <li><strong>Item Name : </strong>Datum | CRM Admin Dashboard Template</li>
+                                                <li><strong>Item Version : </strong> v 1.0</li>
+                                                <li><strong>Author  : </strong> <a href="https://themeforest.net/user/iqonicdesign/portfolio" target="_blank">iqonic.design</a></li>
+                                                <li><strong>Support Forum : </strong> <a href="https://iqonic.desky.support/" target="_blank">https://iqonic.desky.support//</a></li>
+                                                <li><strong>License : </strong> <a href="https://themeforest.net/licenses/standard" target="_blank">Themeforest License</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <hr>
+                                        <div>
+                                            <p>First of all, Thank you so much for purchasing this template and for being my loyal customer.</p>
+
+                                            <p>This documentation is to help you regarding each step of customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. Basic HTML and CSS knowledge is required to customize this template. You may learn basics <a href="http://www.w3schools.com/" target="_blank">here</a>, <a href="https://developer.mozilla.org/" target="_blank">here</a> and <a href="http://learn.shayhowe.com/html-css/building-your-first-web-page/" target="_blank">here</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section" id="quick-start" class="section" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="sub-title">Quick Start <hr></h2>
+                                <p>Get details about Requirements, Basic Installation, Structure, Color mode, Logo, favicon and loader setup your project with easy steps.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <section class="section" id="requirements">
+                                    <h3>Requirement</h3>
+                                    <p>This template have required following depandency</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ol>
+                                                <li>PHP 7.2 or greater</li>
+                                                <li>OpenSSL PHP Extension</li>
+                                                <li>PDO PHP Extension</li>
+                                                <li>Mbstring PHP Extension</li>
+                                                <li>Tokenizer PHP Extension</li>
+                                                <li>XML PHP Extension</li>
+                                                <li>Ctype PHP Extension</li>
+                                                <li>JSON PHP Extension</li>
+                                                <li>GD PHP Extension (or Imagick PHP Extension)</li>
+                                                <li>PHP Fileinfo extension</li>
+                                                <li>PHP Zip Archive</li>
+                                                <li>Rewrite Module (Apache or Nginx)</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <p>PHP.INI Requirements</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ol>
+                                                <li>open_basedir must be disabled</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <p>File and folder permissions</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ol>
+                                                <li>/bootstrap 775</li>
+                                                <li>/storage 775 (recursively)</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                </section>
+
+
+                                <section class="section" id="file-structure">
+                                    <h3>File Structure</h3>
+                                    <p>Here is the <strong>general File structure of the template:</strong></p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul id="myfiles">
+                                                <div><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>laravel</span>
+                                                    <ul>
+                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>app</span>
+                                                            <ul class="list-inline">
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Console</span>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Exceptions</span>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Helpers</span>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Http</span>
+                                                                <ul>
+                                                                    <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span></span>Controllers</li>
+                                                                    <ul>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span></span>Auth</li>
+                                                                        <ul>
+                                                                            <li><i class="fa fa-file-o" aria-hidden="true"></i><span></span> Controller.php</li>
+                                                                            <li><i class="fa fa-file-o" aria-hidden="true"></i><span></span> HomeController.php</li>
+                                                                        </ul>
+                                                                    </ul>
+                                                                    <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Middleware</span></li>
+                                                                    <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Requests</span></li>
+                                                                </ul>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Model</span>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Provider</span>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>View</span>
+                                                            </ul>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>bootstrap</span>
+                                                                        </li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>config</span>
+                                                                        </li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>database</span>
+                                                                        </li>
+                                                                       <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>node_modelus</span>
+                                                                       </li>
+                                                                    <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>public</span>
+                                                                        <ul>
+                                                                            <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>css</span></li>
+                                                                            <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>js</span></li>
+                                                                            <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>images</span></li>
+                                                                            <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>vendor</span></li>
+                                                                        </ul>
+                                                                    </li>
+                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>resources</span></li>
+                                                            <ul>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>css</span></li>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>js</span></li>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>lang</span></li>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>sass</span></li>
+                                                                <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>views</span>
+                                                                    <ul>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>app</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>auth</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>chart</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>components</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>dashboards</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>extrapages</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>forms</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>icons</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>layouts</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>pageError</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>partial</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>table</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>timeline</span></li>
+                                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>ui</span></li>
+                                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> dashboard.blade.php</span></li>
+                                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> welcome.blade.php</span></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>route</span></li>
+                                                        <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>tests</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> .editorconfig</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> .env.example</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> .styleci.yml</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> artisan</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> composer.json</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> package.json</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> phpunit.xml</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> README.md</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> server.php</span></li>
+                                                        <li><i class="fa fa-file-o" aria-hidden="true"></i><span> webpack.mix.js</span></li>
+
+
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section" id="basic-installation">
+                                        <h2 class="sub-title">Installation<hr></h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ol>
+                                                <li>Create Database</li>
+                                                <li>Upload the Codes in below directory based on your server <br>
+                                                    In Linux<br>
+                                                    Path: var/www/html/<br>
+                                                    In cPanel:<br>
+                                                    Inside File manager -> Path: public_html/</li>
+                                                <li>For database settings, open the .env file with a text editor and set your database settings.<br>
+                                                    Note: .env is a hidden file, you can see it by opening directory to a text editor.</li>
+                                                <li>Link your storage folder to public
+                                                    Run in terminal or CMD: php artisan storage:link</li>
+                                                <li>Create Database</li>
+                                                <li>Create Database</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <p>Steps to be follow for getting started with the template:</p>
+                                    <div class="row">
+                                        <div class="col-md-12 col-12">
+                                            <h4 id="laravel-install">laravel</h4>
+                                            <ol>
+                                                <li>Start command prompt window or terminal and change directory laravel
+                                                    <pre class="brush: shell">cd laravel</pre>
+                                                </li>
+                                                <li>Install node_modules Run in terminal or CMD:
+                                                    <pre class="brush: shell"> npm install</pre>
+                                                </li>
+                                                <li>Install vendor Run in terminal or CMD:
+                                                    <pre class="brush: shell"> composer install</pre>
+                                                </li>
+                                                <li>To build css and js for Run in terminal or CMD:
+                                                    <pre class="brush: shell">npm run dev Or npm run build Or npm run watch </pre>
+                                                </li>
+                                                <li>Copy .env.example to .env file
+                                                    <pre class="brush: shell">cp .env.example .env</pre>
+                                                </li>
+                                                <li>Generate Key for project in terminal or CMD:
+                                                    <pre class="brush: shell">php artisan key:artisan</pre>
+                                                </li>
+                                            </ol>
+                                            <h4 id="App-Configuration">App Configuration</h4>
+                                            <ol>
+
+                                                    <pre class="brush: shell">
+                                                        APP_NAME=your app name
+                                                        APP_ENV=production
+                                                        APP_KEY=your key
+                                                        APP_DEBUG=false
+                                                        APP_URL=your app url</pre>
+                                                <li>Open and edit the /.env file and provide following details:
+                                                </li>
+                                                <li>Enter App name, App env, App debug and App url<br>
+                                                    Run in terminal or CMD: php artisan key:generate generate App key
+                                                </li>
+                                            </ol>
+                                            <h4 id="Database-Configuration">Database Configuration</h4>
+                                            <ol>
+                                            <li>Create the database on your server
+                                            </li>
+                                            <li>Open and edit the /.env file and provide your server details:
+                                            </li>
+                                            <pre class="brush: shell">
+                                                       DB_CONNECTION=mysql
+                                                       DB_HOST=127.0.0.1
+                                                       DB_PORT=3306
+                                                       DB_DATABASE=laravel
+                                                       DB_USERNAME=root
+                                                       DB_PASSWORD=</pre>
+                                            <li>Open and edit the /.env file and provide following details:
+                                            </li>
+                                            <li>Enter App name, App env, App debug and App url<br>
+                                                Run in terminal or CMD: php artisan key:generate generate App key
+                                            </li>
+                                            </ol>
+                                            <h4 id="Mail-Configuration">Mail Configuration</h4>
+                                            <ol>
+                                                <li>Open and edit the /.env file and provide following details:
+                                                </li>
+                                                <pre class="brush: shell">
+                                                      MAIL_DRIVER=your mail driver
+                                                      MAIL_HOST=your mail host
+                                                      MAIL_PORT=your mail port
+                                                      MAIL_USERNAME=your mail id
+                                                      MAIL_PASSWORD=your mail password
+                                                      MAIL_ENCRYPTION=your mail encryption</pre>
+                                                <li>Enter mail host name, mail port, mail username( Mail ID ), mail password and mail encryption type.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div><!--//row-->
+                                </section>
+
+                                <section class="section" >
+                                    <h2 id="cutomization" class="sub-title">Customization <hr></h2>
+                                    <p>There are some  customization like change color, logo, loader, favicon, default mode (dark or light) etc...</p>
+                                    <h3 id="color-mode" class="block-title">Color</h3>
+                                        <p>Here is the <strong>Change color mode Dark/Light in laravel</strong></p>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <pre class="brush: html">
+                                                    If you want to light mode
+                                                    &lt;body&gt;
+
+                                                    If you want to Dark mode
+                                                    &lt;body class="dark"&gt;
+                                                </pre>
+                                            </div>
+                                        </div>
+                                </section>
+
+                                <section class="section" id="basic-favicon">
+                                    <h3 class="block-title">Favicon icon</h3>
+                                    <p>Favicon is an icon associated with the URL that is displayed at various places, such as in a browser’s address bar or next to the site name in a bookmark list.</p>
+                                    <p>You can add a Favicon to your Website using the following code:</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <pre class="brush: html"><link rel="shortcut icon" href="images/favicon.ico"/></pre>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section" id="basic-loading">
+                                    <h3 class="block-title">Loading Transitions</h3>
+                                    <p>Page Loading Transitions are enabled by default. If you wish to disable the page loading transition you can simply delete below section</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <pre class="brush: html">
+                                                <div id="loading">
+                                                    <div id="loading-center">
+                                                    </div>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section" id="basic-logo">
+                                    <h3 class="block-title">Logo</h3>
+                                    <p>The Logo Container can be found in the Header Container - <span class="atv"> #header</span>. Replace <span class="atv">"logo.png"</span> with your own logo image URL.</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <pre class="brush: html">
+                                                <ul class="menu-logo">
+                                                    <li>
+                                                        <a href="index.html">
+                                                            <img src="../assets/images/logo.png" alt="logo">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+
+                                </section>
+
+                                <section class="section" id="basic-fonts">
+                                    <h3 class="block-title">For Changing Fonts</h3>
+                                    <p> You can add/change the site font, from all fonts used from <a href="https://www.google.com/fonts"> Google Web Font Services,</a> with the one that suits you the best. You can find the font link in top of the <span class="atv">Style.css</span> in all HTML file. See example below:</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <pre class="brush: html">
+                                                <!-- google font -->
+                                                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,800|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+                                            </pre>
+                                            <p>To include new font you can simply add another link like this: </p>
+                                            <pre class="brush: html">
+                                                <!-- google font -->
+                                                <!--Robaoto font -->
+                                                <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" />
+
+                                                <!--"Nunito",sans-serif font -->
+                                                <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600&display=swap"
+                                                rel="stylesheet" >
+                                            </pre>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section" id="basic-structure">
+                                    <h3 class="block-title">HTML Structure</h3>
+                                    <p>Here is the <strong>general layout structure of the template:</strong></p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <pre class="brush: html">
+                                                 &lt;!DOCTYPE html&gt;
+                                                 &lt;html lang="{{ str_replace('_', '-', app()->getLocale()) }}"&gt;
+                                                 &lt;head&gt;
+                                                    <meta charset="utf-8">
+                                                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                    <meta name="csrf-token" content="{{ csrf_token() }}">
+                                                   &lt;title &gt{{ config('app.name', 'Laravel') }}&lt;/title&gt
+                                                   @include('partials._head')
+                                                 &lt;/head&gt;
+                                                 &lt;/html&gt;
+                                                    &lt;body class="" id="app"&gt;
+                                                    @include('partials._body')
+                                                 &lt;body&gt;
+                                                 &lt;/html&gt;
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section" id="basic-css">
+                                    <h3 class="block-title">CSS Structure</h3>
+                                    <p>Here is the <strong>general CSS structure of the template:</strong></p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <pre class="brush: html">
+                                                <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}"/>
+                                                <link rel="stylesheet" href="{{ asset('css/backend-bundle.min.css') }}"/>
+                                                <link rel="stylesheet" href="{{ asset('css/backend.css') }}"/>
+                                                <link rel="stylesheet" href="{{ asset('vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"/>
+                                                <link rel="stylesheet" href="{{ asset('vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css') }}"/>
+                                                <link rel="stylesheet" href="{{ asset('vendor/remixicon/fonts/remixicon.css') }}"/>
+                                                <link rel="stylesheet" href="{{ asset('vendor/@icon/dripicons/dripicons.css') }}"/>
+                                                <link rel='stylesheet' href="{{ asset('vendor/fullcalendar/core/main.css' ) }}"/>
+                                                <link rel='stylesheet' href="{{ asset('vendor/fullcalendar/daygrid/main.css') }}"/>
+                                                <link rel='stylesheet' href="{{ asset('vendor/fullcalendar/timegrid/main.css') }}" />
+                                                <link rel='stylesheet' href="{{ asset('vendor/fullcalendar/list/main.css') }}" />
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section" id="basic-js">
+                                    <h3 class="block-title">Javascript Structure</h3>
+                                    <p>Here is the <strong>general Javascript structure of the template:</strong></p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <pre class="brush: html">
+                                                <!-- Backend Bundle JavaScript -->
+                                            <script src="{{ asset('js/backend-bundle.min.js') }}"></script>
+                                            <script src="{{ asset('js/raphael-min.js') }}"></script>
+                                            <script src="{{ asset('js/morris.js') }}"></script>
+                                            @yield('bottom_script')
+                                                <!-- Flextree Javascript-->
+                                            <script src="{{ asset('js/flex-tree.min.js') }}"></script>
+                                            <script src="{{ asset('js/tree.js') }}"></script>
+                                                <!-- Table Treeview JavaScript -->
+                                            <script src="{{ asset('js/table-treeview.js') }}"></script>
+                                                <!-- Masonary Gallery Javascript -->
+                                            <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
+                                            <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
+                                                <!-- SweetAlert JavaScript -->
+                                            <script src="{{ asset('js/sweetalert.js') }}"></script>
+                                                <!-- Vectoe Map JavaScript -->
+                                            <script src="{{ asset('js/vector-map-custom.js') }}"></script>
+                                                <!-- Chart Custom JavaScript -->
+                                            <script src="{{ asset('js/customizer.js') }}"></script>
+                                                <!-- Chart Custom JavaScript -->
+                                            <script src="{{ asset('js/chart-custom.js') }}"></script>
+                                            <script src="{{ asset('js/charts/01.js') }}"></script>
+                                            <script src="{{ asset('js/charts/02.js') }}"></script>
+                                                <!-- slider JavaScript -->
+                                            <script src="{{ asset('js/slider.js') }}"></script>
+                                                <!-- Emoji picker -->
+                                            <script type="module" src="{{ asset('vendor/emoji-picker-element/index.js') }}"></script>
+                                                <!-- app JavaScript -->
+                                            <script src="{{ asset('js/app.js') }}" defer></script>
+                                            </pre>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section class="section" id="helper-section">
+                        <h2 class="sub-title">Helper classes <hr></h2>
+                        <section class="section" id="basic-padding">
+                            <h3 class="block-title">For section padding</h3>
+                            <p>You can add this helper class to set section <span class="atv">padding top 100px</span> and <span class="atv">padding bottom 100px</span>.
+                                <br> Add <span class="atv">overview-block-ptb</span> class in <span class="atv">section</span> tag. See example below:
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <pre class="brush: html">
+                                        &lt;section class=&quot;... overview-block-ptb&quot;&gt;
+                                        [YOUR CONTENT]
+                                        <p>
+                                        &lt;/section&gt;
+                                        </p>
+                                    </pre>
+                                <p> <span class="badge badge-danger">Note</span> Use this helper class to maintain all page section spacing. You can also use <span class="atv">overview-block-pt</span> for only padding top and <span class="atv">overview-block-pb</span> for only padding bottom. </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section" id="basic-color">
+                            <h3 class="block-title">For Text color</h3>
+                            <p>You can use color in the Text. simply add <span class="atv"> .main-color </span> ( or any color you want) class where you want to use. See example below: </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <pre class="brush: html">
+                                        &lt;div class=&quot;text-primary&quot;&gt;
+                                        [YOUR TEXT CONTENT]
+                                        &lt;/div&gt;
+                                    </pre>
+                                    <p> <span class="badge badge-danger">Note</span> We include 4 color helper class in our template <span class="atv">text-gray, text-black, main-color and text-white</span>. you can add unlimited color class according to your needs. </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section" id="basic-background">
+                            <h3 class="block-title">For Background color</h3>
+                            <p>You can use color in the background. simply add <span class="atv"> .white-bg</span> (or any color you want) class where you want to use. See example below: </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <pre class="brush: html">
+                                        &lt;div class=&quot;bg-primary&quot;&gt;
+                                        [YOUR CONTENT]
+                                        &lt;/div&gt;
+                                    </pre>
+                                    <p> <span class="badge badge-danger">Note</span> We include 4 color helper class in our template <span class="atv">text-gray, text-black, main-color and text-white</span>. you can add unlimited color class according to your needs. </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section" id="basic-pattern">
+                            <h3 class="block-title">For Background Images and pattern</h3>
+                            <p>You can use an image in the background with parallax effect by simply adding <span class="atv"> InlineStyle </span> in div tag and by use of this you can create your own background. See example below: </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <pre class="brush: html">
+                                        &lt;div style=&quot;background-image:url(Path); &quot;&gt;
+                                        [YOUR CONTENT]
+                                        &lt;/div&gt;
+                                    </pre>
+                                    <p> If your background is small and you want to use repeated background then use styling property <span class="atv"> background-repeat </span> and set the value <span class="atv">repeat</span> or <span class="atv">no-repeat</span>. See the example below:</p>
+                                    <pre class="brush: html">
+                                        &lt;div style=&quot;background-image:url(Path); background-repeat:no-repeat;&quot;&gt;
+                                        [YOUR CONTENT]
+                                        &lt;/div&gt;
+                                    </pre>
+                                    <p> If you want to use your background like cover or cointainer. You just need to add styling property <span class="atv"> background-size </span> and set the value <span class="atv">cover</span> or <span class="atv">cointainer</span>. see the example below:</p>
+                                    <pre class="brush: html">
+                                        &lt;div style=&quot;background-image:url(Path); background-size:cover;&quot;&gt;
+                                        [YOUR CONTENT]
+                                        &lt;/div&gt;
+                                    </pre>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section" id="basic-overlay">
+                            <h3 class="block-title">For Background overlay</h3>
+                            <p>You can use these <span class="atv"> .iq-over-black-30, .iq-over-white-20, .iq-over-green-90 </span> classes to any element in your HTML code to apply overlay color on any image or section. See example below:</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <pre class="brush: html">
+                                        &lt;div class=&quot;iq-over-black-80&quot;&gt;
+                                        [YOUR CONTENT]
+                                        &lt;/div&gt;
+                                    </pre>
+                                    <p><strong>Structure: </strong> <span class="atv">.iq-over-{<b>color</b>}-{<b>opacity</b>}</span>. For Example, <span class="atv"> .iq-over-black-80</span></p>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="section" id="basic-components" class="section">
+                        <h2 class="sub-title">Bootstrap Components <hr></h2>
+                        <div class="section-block">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/4.1/utilities/text/#text-alignment" target="black">Text Alignments</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/4.1/components/alerts/" target="black">Alerts</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/4.1/components/badge/" target="black">Badges</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/4.1/components/carousel/" target="black">Carousel</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Columns</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/4.1/content/tables/">Tables</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="black">Buttons</a>
+                                       </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </section>
+
+                    <section class="section" id="basic-sliders" class="section">
+                        <h2 class="sub-title">For Sliders <hr></h2>
+                        <div class="section-block">
+                            <p>There 2 different sliders for you to be used on any page with variety of Options. List of the Sliders:</p>
+                            <ul>
+                               <li><a href="https://kenwheeler.github.io/slick/" target="_blank">Slick Slider</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="section" id="basic-source-credit" class="section">
+                        <h2 class="sub-title">Source & Credits <hr></h2>
+                        <div class="section-block">
+                            <p>All images and videos are for preview purposes only and are not included in the download files. Images are of copyrights under Creative Commons CC0.</p>
+                            <h3>Tool</h3>
+                            <ul>
+                                <li><a href="https://gulpjs.com/" target="_blank">Gulp</a></li>
+                                <li><a href="https://nodejs.org/en/" target="_blank">Node</a></li>
+                            </ul>
+                            <h3 class="block-title">Images</h3>
+                            <ul>
+                               <li><a href="https://www.bigstockphoto.com/" target="_blank">bigstockphoto</a></li>
+                               <li><a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+                               <li><a href="http://www.freepik.com/" target="_blank">freepik</a></li>
+                               <li><a href="https://pixabay.com/" target="_blank">pixabay</a></li>
+                            </ul>
+                            <br>
+                            <br>
+                            <h3 class="block-title">Scripts</h3>
+                            <ul>
+                               <li><a href="https://jquery.com/" target="_blank">Jquery</a></li>
+                               <li><a href="https://github.com/bas2k/jquery.appear/" target="_blank">Jquery appear</a></li>
+                               <li><a href="https://github.com/bfintal/Counter-Up2" target="_blank">Counter</a></li>
+                               <li><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a></li>
+                               <li><a href="https://apexcharts.com/" target="_blank">Apex Chart</a></li>
+                            </ul>
+                            <br>
+                            <br>
+                            <h3 class="block-title">CSS & Fonts</h3>
+                            <ul>
+                               <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                               <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+                               <li><a href="https://icons8.com/line-awesome" target="_blank">line Awesome</a></li>
+                               <li><a href="https://remixicon.com/" target="_blank">remixicon</a></li>
+                               <li><a href="https://iconstore.co/icons/dripicons" target="_blank">dripicons</a></li>
+                               <li><a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="section" id="copyright-licence" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="sub-title">Copyright and license <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>Code released under the themeforst <a href="https://themeforest.net/licenses/terms/regular" target="_blank">Reguler License</a> and <a href="https://themeforest.net/licenses/terms/extended" target="_blank">Extended License</a>.</p>
+                                <p>For more information about copyright and license check <a href="http://iqonic.design/" target="_blank">iqonic.design</a>.</p>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushBash.js"></script>
+
+</body>
+
+</html>
